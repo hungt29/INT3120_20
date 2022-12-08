@@ -23,13 +23,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
-        android:text="M U S I C   4 B"
+        android:text="M U S I C   M P 3"
         android:textColor="#3DE5FF"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageProfile" />
+        app:layout_constraintTop_toBottomOf="@+id/imageProfile"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btndangxuat"

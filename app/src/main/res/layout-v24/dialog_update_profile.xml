@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="350dp"
     android:layout_height="650dp"
     android:layout_gravity="center_horizontal"
@@ -10,7 +11,8 @@
         android:id="@+id/bgr_top_update"
         android:layout_width="350dp"
         android:layout_height="200dp"
-        android:src="@drawable/bgr_update_profile" />
+        android:src="@drawable/bgr_update_profile"
+        tools:ignore="ContentDescription" />
 
     <RelativeLayout
         android:background="#1B1B1B"
@@ -27,7 +29,8 @@
             android:text="P R O F I L E"
             android:textColor="#00E0FF"
             android:textSize="32sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_avt"
@@ -49,7 +52,8 @@
             android:padding="8dp"
             android:scaleType="fitXY"
             android:layout_width="40dp"
-            android:layout_height="40dp"/>
+            android:layout_height="40dp"
+            tools:ignore="ContentDescription" />
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edt_update_nameuser"
             android:layout_below="@+id/img_avt"
@@ -79,6 +83,7 @@
             android:layout_marginTop="32dp"
             android:padding="8dp"
             android:scaleType="fitXY"
-            android:src="@drawable/ic_send_update" />
+            android:src="@drawable/ic_send_update"
+            tools:ignore="ContentDescription" />
     </RelativeLayout>
 </LinearLayout>
