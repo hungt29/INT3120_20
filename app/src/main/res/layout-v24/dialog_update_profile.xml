@@ -5,11 +5,13 @@
     android:layout_height="650dp"
     android:layout_gravity="center_horizontal"
     android:orientation="vertical">
+
     <ImageView
         android:id="@+id/bgr_top_update"
         android:layout_width="350dp"
         android:layout_height="200dp"
-        android:src="@drawable/bgr_update_profile"/>
+        android:src="@drawable/bgr_update_profile" />
+
     <RelativeLayout
         android:background="#1B1B1B"
         android:paddingBottom="24dp"
