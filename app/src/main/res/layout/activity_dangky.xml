@@ -14,19 +14,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:fontFamily="@font/arimo_bold"
-        android:text="Hàng triệu bài hát"
+        android:text="Wellcome MusicMp3"
         android:textColor="#ffffff"
-        android:textSize="30sp"/>
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/arimo_bold"
-        android:text="Miễn phí trên MusicMp3."
-        android:textColor="#ffffff"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView"
