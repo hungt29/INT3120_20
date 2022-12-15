@@ -135,11 +135,11 @@ public class Fragment_Dialog_Quen_Mk extends Fragment {
     }
 
     private void senMail(String tkqmk){
-        final String email = "music4bverify@gmail.com";
-        final  String password = "L581f3186";
+        final String email = "emailmusicmp3@gmail.com";
+        final  String password = "musicapp3";
         Random random = new Random();
         code = 10000 + random.nextInt(89999);
-        String messenger = "[Music4B]Mã xác nhận của bạn là :"+ code+". Không chia sẻ mã này cho bất kì ai.";
+        String messenger = "[MusicMp3]Mã xác nhận của bạn là :"+ code+". Không chia sẻ mã này cho bất kì ai.";
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");

@@ -1,5 +1,6 @@
 package com.example.MusicMp3.Fragment;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -163,11 +164,11 @@ public class Dialog_Dangky_Free extends AppCompatDialogFragment {
         return --interval;
     }
     private void senMail(String emaildangky){
-        final String email = "music4bverify@gmail.com";
-        final  String password = "L581f3186";
+        final String email = "emailmusicmp3@gmail.com";
+        final  String password = "musicapp3";
         Random random = new Random();
         code = 10000 + random.nextInt(89999);
-        String messenger = "[Music4B]Mã xác nhận của bạn là :"+ code+". Không chia sẻ mã này cho bất kì ai.";
+        String messenger = "[MusicMp3]Mã xác nhận của bạn là :"+ code+". Không chia sẻ mã này cho bất kì ai.";
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
@@ -193,6 +194,7 @@ public class Dialog_Dangky_Free extends AppCompatDialogFragment {
             interval = Integer.parseInt(secs);
             timer = new Timer();
             timer.scheduleAtFixedRate(new TimerTask() {
+                @SuppressLint("SetTextI18n")
                 public void run() {
                     timeValue = setInterval();
                     if (timeValue == 0){

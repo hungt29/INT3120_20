@@ -18,7 +18,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        tools:ignore="ContentDescription,RtlHardcoded" />
 
     <TextView
         android:id="@+id/txttennhac"
@@ -34,7 +35,8 @@
         android:textSize="21sp"
         android:maxLines="1"
         app:layout_constraintStart_toEndOf="@+id/imgnhac"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <TextView
         android:id="@+id/txtcasinhac"
@@ -45,11 +47,12 @@
         android:layout_marginTop="6dp"
         android:fontFamily="@font/arimo_bold"
         android:maxWidth="250dp"
-        android:text="Ca siz"
+        android:text="Ca sĩ"
         android:textColor="#C3C3C3"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imgnhac"
-        app:layout_constraintTop_toBottomOf="@+id/txttennhac" />
+        app:layout_constraintTop_toBottomOf="@+id/txttennhac"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <ImageView
         android:id="@+id/imginsertnhac"
@@ -63,5 +66,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        tools:ignore="ContentDescription,RtlHardcoded" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -217,7 +217,7 @@ public class DangKyActivity extends AppCompatActivity implements Dialog_Dangky_F
         password = matkhau;
         name = taikhoan;
         email = emailz;
-        imageurl = "https://music4b.000webhostapp.com/HinhAnh/spotify_64px.png";
+        imageurl = "https://tonghung19020552.000webhostapp.com/Hinhanh/Logo%20icon.png";
         params.put("UserName", taikhoan);
         params.put("Password", matkhau);
         params.put("Name", name);

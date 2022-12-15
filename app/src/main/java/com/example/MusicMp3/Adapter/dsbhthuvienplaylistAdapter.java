@@ -1,5 +1,6 @@
 package com.example.MusicMp3.Adapter;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -49,7 +50,7 @@ public class dsbhthuvienplaylistAdapter extends RecyclerView.Adapter<dsbhthuvien
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         BaiHatThuVienPlayListModel baiHatThuVienPlayList = mangbaihatthuvienplaylist.get(position);
         holder.txttenbaihat.setText(baiHatThuVienPlayList.getTenBaiHat());
         holder.txttencasi.setText(baiHatThuVienPlayList.getTenCaSi());
@@ -73,7 +74,7 @@ public class dsbhthuvienplaylistAdapter extends RecyclerView.Adapter<dsbhthuvien
                         deletemotbaihatthuvien(baiHatThuVienPlayList.getIdBaiHatThuVienPlayList());
                         mangbaihatthuvienplaylist.remove(position);
                         if (mangbaihatthuvienplaylist.size() <= 0){
-                            UpdateHinhThuVien(baiHatThuVienPlayList.getIdThuVienPlayList(), "https://music4b.000webhostapp.com/icon_thuvien.jpg");
+                            UpdateHinhThuVien(baiHatThuVienPlayList.getIdThuVienPlayList(), "https://tonghung19020552.000webhostapp.com/Hinhanh/icon_thuvien.jpg");
                         }else {
                             if (position == mangbaihatthuvienplaylist.size()){
                                 UpdateHinhThuVien(baiHatThuVienPlayList.getIdThuVienPlayList(), mangbaihatthuvienplaylist.get(mangbaihatthuvienplaylist.size()-1).getHinhBaiHat());

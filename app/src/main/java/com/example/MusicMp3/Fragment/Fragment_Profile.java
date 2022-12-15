@@ -80,7 +80,7 @@ public class Fragment_Profile extends Fragment implements Dialog_update_user.Exa
         name.setText(tenUser);
         if (bitmap != null){
             imguser.setImageBitmap(bitmap);
-            sql = "UPDATE tbNguoiDung SET Ten ='"+tenUser+"', ImageURL =  'https://music4b.000webhostapp.com/HinhAnh/NguoiDung/"+hm.getTaikhoan()+".jpg' WHERE TaiKhoan = '"+hm.getTaikhoan()+"'";
+            sql = "UPDATE tbNguoiDung SET Ten ='"+tenUser+"', ImageURL =  'https://tonghung19020552.000webhostapp.com/Hinhanh/Nguoidung/"+hm.getTaikhoan()+".jpg' WHERE TaiKhoan = '"+hm.getTaikhoan()+"'";
         }else {
             sql = "UPDATE tbNguoiDung SET Ten ='"+tenUser+"' WHERE TaiKhoan = '"+hm.getTaikhoan()+"'";
         }

@@ -76,7 +76,8 @@
         android:fontFamily="@font/arimo_bold"
         android:text="Mật khẩu"
         android:textColor="@color/design_default_color_background"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
 
 
     <com.google.android.material.textfield.TextInputLayout

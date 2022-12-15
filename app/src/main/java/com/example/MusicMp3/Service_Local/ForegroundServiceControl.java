@@ -1,5 +1,7 @@
 package com.example.MusicMp3.Service_Local;
 
+import static com.example.MusicMp3.Service_Local.ChannelNotification.CHANNEL_ID;
+
 import android.annotation.SuppressLint;
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -29,8 +31,6 @@ import com.squareup.picasso.Target;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
-
-import static com.example.MusicMp3.Service_Local.ChannelNotification.CHANNEL_ID;
 public class ForegroundServiceControl extends Service {
     public static final int ACTION_PAUSE = 1;
     public static final int ACTION_RESUME = 2;
@@ -203,7 +203,7 @@ public class ForegroundServiceControl extends Service {
     private void sendNotificationMedia(String tenBaiHat, String tenCaSi){
         MediaSessionCompat mediaSessionCompat = new MediaSessionCompat(this, "tag");
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(R.drawable.iconlogo)
+                .setSmallIcon(R.drawable.logo_icon)
                 .setContentText("Music 4B")
                 .setContentTitle(tenBaiHat)
                 .setContentText(tenCaSi)
@@ -249,7 +249,6 @@ public class ForegroundServiceControl extends Service {
             LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
         }
     }
-    @SuppressWarnings("deprecation")
     private void sendTimeCurrent(){
         if (mediaPlayer != null){
             curentime = mediaPlayer.getCurrentPosition();

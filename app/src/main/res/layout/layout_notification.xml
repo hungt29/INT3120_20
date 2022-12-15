@@ -8,7 +8,7 @@
         android:id="@+id/img_song"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/logo_icon"
         android:scaleType="centerCrop"
         android:layout_centerVertical="true"/>
 
