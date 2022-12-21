@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MusicMp3</string>
-    <string name="facebook_app_id">528449238391776</string>
-    <string name="fb_login_protocol_scheme">fb528449238391776</string>
+    <string name="facebook_app_id">924779895155103</string>
+    <string name="fb_login_protocol_scheme">fb924779895155103</string>
     <string name="single">---</string>
     <string name="runtime">--:--</string>
     <string name="totaltime">--:--</string>

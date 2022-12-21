@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.MusicMp3.Fragment.Dialog_Forget_Password;
 import com.example.MusicMp3.Model.NguoiDungModel;
@@ -29,7 +30,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class DangNhapActivity extends AppCompatActivity {
-    androidx.appcompat.widget.Toolbar toolbardangnhap;
+    Toolbar toolbardangnhap;
     private SQLiteDatabase db;
     private TextInputLayout matkhau, taikhoan;
     private Button dangnhap;

@@ -13,7 +13,7 @@ public class PhanHoiDangKyModel {
         return success;
     }
 
-    /*public String getMessage() {
+    public String getMessage() {
         return message;
-    }*/
+    }
 }

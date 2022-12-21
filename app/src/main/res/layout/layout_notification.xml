@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="64dp"
     android:background="#333333">
@@ -10,7 +11,8 @@
         android:layout_height="35dp"
         android:src="@drawable/logo_icon"
         android:scaleType="centerCrop"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        tools:ignore="ContentDescription" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,6 +46,7 @@
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="16dp"
-        android:src="@drawable/plus_24px"/>
+        android:src="@drawable/plus_24px"
+        tools:ignore="ContentDescription,RtlHardcoded" />
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.MusicMp3.Adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -38,7 +39,7 @@ public class BangXepHangAdapter extends RecyclerView.Adapter<BangXepHangAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BangXepHangAdapter.ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull BangXepHangAdapter.ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         BangXepHangModel bangXepHang = mangbangxephang.get(position);
         holder.txtbangxephang.setText(bangXepHang.getTenBangXepHang());
         Picasso.get(/*context*/).load(bangXepHang.getHinhBangXepHang()).into(holder.imgbangxephang);
