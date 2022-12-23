@@ -79,6 +79,17 @@
             android:contentDescription="@string/tim"
             android:scaleType="fitXY"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <ImageView
+            android:id="@+id/imagedownload"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="43dp"
+            android:background="@drawable/pngdl"
+            android:scaleType="fitXY" />
+
     </RelativeLayout>
 
     <SeekBar
