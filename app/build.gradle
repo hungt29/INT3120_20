@@ -34,6 +34,8 @@ dependencies {
     implementation 'com.facebook.android:facebook-login:5.11.0'
     //implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
     //implementation 'com.facebook.android:facebook-login:latest.release'
+    //noinspection NotInterpolated
+    implementation 'com.sun.mail:android-mail:$java_mail_version'
     //noinspection GradleCompatible
     implementation 'com.android.support:palette-v7:26.1.0'
     implementation 'com.google.firebase:firebase-encoders-json:18.0.0'

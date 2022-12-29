@@ -174,6 +174,8 @@ public class Dialog_Dangky_Free extends AppCompatDialogFragment {
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.host", "smtp.gmail.com");
         properties.put("mail.smtp.port", "587");
+        properties.put("mail.smtp.socketFactory.port", "587");
+        properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 
         Session session = Session.getInstance(properties, new javax.mail.Authenticator(){
             @Override
@@ -182,7 +184,7 @@ public class Dialog_Dangky_Free extends AppCompatDialogFragment {
             }
         });
         try {
-            Message message = new MimeMessage(session);
+            MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(email));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(emaildangky));
             message.setSubject("Đăng ký tài khoản");

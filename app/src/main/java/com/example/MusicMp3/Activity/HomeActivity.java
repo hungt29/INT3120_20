@@ -51,6 +51,7 @@ public class HomeActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.anim_intent_in_home, R.anim.anim_intent_out);
     }
 
+
     @Override
     public void onBackPressed() {
         if (backPressTime + 2000 > System.currentTimeMillis()){
